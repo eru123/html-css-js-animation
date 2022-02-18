@@ -1,7 +1,5 @@
 let lastIn = null;
 
-
-
 function switchBox(n) {
   const in_e = document.getElementById("in");
   const out_e = document.getElementById("out");
