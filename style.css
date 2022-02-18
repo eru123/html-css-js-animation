@@ -1,0 +1,310 @@
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons-container {
+  flex: 1;
+  height: 100%;
+  padding-top: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.buttons-container button {
+  cursor: pointer;
+  width: 120px;
+  border-width: 2px;
+  padding: 4px;
+  margin: 10px 0;
+  transition: transform 0.2s;
+}
+.buttons-container button:hover {
+  transform: scale(1.2);
+}
+.buttons-container button#btn1 {
+  background-color: purple;
+}
+.buttons-container button#btn2 {
+  background-color: pink;
+}
+.buttons-container button#btn3 {
+  background-color: blue;
+}
+.buttons-container button#btn4 {
+  background-color: green;
+}
+.buttons-container button#btn5 {
+  background-color: yellow;
+}
+.buttons-container button#btn6 {
+  background-color: orange;
+}
+.buttons-container button#btn7 {
+  background-color: red;
+}
+
+.boxes-container {
+  flex: 2;
+}
+.boxes-container #in,
+.boxes-container #out {
+  position: fixed;
+  bottom: 10em;
+  right: 15em;
+  width: 300px;
+  height: 300px;
+  bottom: 100px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: white;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+}
+.boxes-container #in.btn1-in {
+  background-color: white;
+  border-color: purple;
+  animation-name: btn1-in;
+}
+.boxes-container #in.btn2-in {
+  background-color: white;
+  border-color: pink;
+  animation-name: btn2-in;
+}
+.boxes-container #in.btn3-in {
+  background-color: white;
+  border-color: blue;
+  animation-name: btn3-in;
+}
+.boxes-container #in.btn4-in {
+  background-color: white;
+  border-color: green;
+  animation-name: btn4-in;
+}
+.boxes-container #in.btn5-in {
+  background-color: white;
+  border-color: yellow;
+  animation-name: btn5-in;
+}
+.boxes-container #in.btn6-in {
+  background-color: white;
+  border-color: orange;
+  animation-name: btn6-in;
+}
+.boxes-container #in.btn7-in {
+  background-color: white;
+  border-color: red;
+  animation-name: btn7-in;
+}
+.boxes-container #out {
+  transform: translateY(-100vh);
+}
+.boxes-container #out.btn1-out {
+  background-color: purple;
+  border-color: purple;
+  animation-name: btn1-out;
+}
+.boxes-container #out.btn2-out {
+  background-color: pink;
+  border-color: pink;
+  animation-name: btn2-out;
+}
+.boxes-container #out.btn3-out {
+  background-color: blue;
+  border-color: blue;
+  animation-name: btn3-out;
+}
+.boxes-container #out.btn4-out {
+  background-color: green;
+  border-color: green;
+  animation-name: btn4-out;
+}
+.boxes-container #out.btn5-out {
+  background-color: yellow;
+  border-color: yellow;
+  animation-name: btn5-out;
+}
+.boxes-container #out.btn6-out {
+  background-color: orange;
+  border-color: orange;
+  animation-name: btn6-out;
+}
+.boxes-container #out.btn7-out {
+  background-color: red;
+  border-color: red;
+  animation-name: btn7-out;
+}
+
+@keyframes btn1-in {
+  0% {
+    background-color: purple;
+    border-color: purple;
+    transform: translateY(-100vh);
+  }
+  100% {
+    background-color: white;
+    border-color: purple;
+    transform: translateY(0);
+  }
+}
+@keyframes btn2-in {
+  0% {
+    background-color: pink;
+    border-color: pink;
+    transform: translateY(-100vh);
+  }
+  100% {
+    background-color: white;
+    border-color: pink;
+    transform: translateY(0);
+  }
+}
+@keyframes btn3-in {
+  0% {
+    background-color: blue;
+    border-color: blue;
+    transform: translateY(-100vh);
+  }
+  100% {
+    background-color: white;
+    border-color: blue;
+    transform: translateY(0);
+  }
+}
+@keyframes btn4-in {
+  0% {
+    background-color: green;
+    border-color: green;
+    transform: translateY(-100vh);
+  }
+  100% {
+    background-color: white;
+    border-color: green;
+    transform: translateY(0);
+  }
+}
+@keyframes btn5-in {
+  0% {
+    background-color: yellow;
+    border-color: yellow;
+    transform: translateY(-100vh);
+  }
+  100% {
+    background-color: white;
+    border-color: yellow;
+    transform: translateY(0);
+  }
+}
+@keyframes btn6-in {
+  0% {
+    background-color: orange;
+    border-color: orange;
+    transform: translateY(-100vh);
+  }
+  100% {
+    background-color: white;
+    border-color: orange;
+    transform: translateY(0);
+  }
+}
+@keyframes btn7-in {
+  0% {
+    background-color: red;
+    border-color: red;
+    transform: translateY(-100vh);
+  }
+  100% {
+    background-color: white;
+    border-color: red;
+    transform: translateY(0);
+  }
+}
+@keyframes btn1-out {
+  0% {
+    background-color: white;
+    border-color: purple;
+    transform: translateY(0);
+  }
+  100% {
+    background-color: purple;
+    border-color: purple;
+    transform: translateY(-100vh);
+  }
+}
+@keyframes btn2-out {
+  0% {
+    background-color: white;
+    border-color: pink;
+    transform: translateY(0);
+  }
+  100% {
+    background-color: pink;
+    border-color: pink;
+    transform: translateY(-100vh);
+  }
+}
+@keyframes btn3-out {
+  0% {
+    background-color: white;
+    border-color: blue;
+    transform: translateY(0);
+  }
+  100% {
+    background-color: blue;
+    border-color: blue;
+    transform: translateY(-100vh);
+  }
+}
+@keyframes btn4-out {
+  0% {
+    background-color: white;
+    border-color: green;
+    transform: translateY(0);
+  }
+  100% {
+    background-color: green;
+    border-color: green;
+    transform: translateY(-100vh);
+  }
+}
+@keyframes btn5-out {
+  0% {
+    background-color: white;
+    border-color: yellow;
+    transform: translateY(0);
+  }
+  100% {
+    background-color: yellow;
+    border-color: yellow;
+    transform: translateY(-100vh);
+  }
+}
+@keyframes btn6-out {
+  0% {
+    background-color: white;
+    border-color: orange;
+    transform: translateY(0);
+  }
+  100% {
+    background-color: orange;
+    border-color: orange;
+    transform: translateY(-100vh);
+  }
+}
+@keyframes btn7-out {
+  0% {
+    background-color: white;
+    border-color: red;
+    transform: translateY(0);
+  }
+  100% {
+    background-color: red;
+    border-color: red;
+    transform: translateY(-100vh);
+  }
+}
